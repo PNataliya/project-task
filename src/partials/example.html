@@ -1,37 +1,71 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
+<section class="section">
+  <div class="container">
+    <h1 class="hero-title">Crime topography</h1>
+    <div class="box">
+      <ul class="list">
+        <li class="affected_number">
+          1000
+          <p class="affected_type">Text</p>
+        </li>
+        <li class="affected_number">
+          1000
+          <p class="affected_type">Text</p>
+        </li>
+        <li class="affected_number">
+          1000
+          <p class="affected_type">Text</p>
+        </li>
+        <li class="affected_number">
+          1000
+          <p class="affected_type">Text</p>
+        </li>
+        <li class="affected_number">
+          1000
+          <p class="affected_type">Text</p>
+        </li>
+      </ul>
 
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
+      <img
+        class="map"
+        src="./images/icons-map.svg"
+        width="686"
+        height="457"
+        alt="map Ukraine"
+        style=""
+      />
+      <img class="scale" src="./images/Frame.png" width="1040" alt="scale"/>
+    </div>
+    
+    <div class="frame">
+      
+      <input
+        type="range"
+        value="0"
+        min="0"
+        max="100"
+        id="range"
+        oninput="rangenumber.value=value"
+      />
+      <input
+        type="number"
+        id="rangenumber"
+        min="0"
+        max="100"
+        value="0"
+        oninput="range.value=value"
+      />
+      
+    </div>
 
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
+    
 
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
+    <button class="button_for_animation" type="button"><img class="button-icon" src="./images/play.png" width="40" height="40"/></button>
+    
+  </div>
+</section>
 
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
 
-  <div class="background"></div>
-</article>
+
+
+  <!-- <div class="background"></div> -->
+</article> 

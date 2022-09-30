@@ -1,0 +1,177 @@
+.box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.affected_number {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--wight-color);
+}
+
+.affected_type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--wight-color);
+}
+
+.map {
+  position: absolute;
+  top: 141px;
+  right: 208px;
+}
+
+.frame {
+  position: absolute;
+  bottom: 72px;
+  left: 120px;
+  width: 1040px;
+  border: 2px solid tomato;
+}
+
+.frame-scale {
+  width: 1040px;
+  //   height: 2px;
+}
+
+// .frame-csroll::before {
+//   content: '';
+//   width: 6px;
+//   height: 8px;
+//   background-color: #565656;
+//   border-radius: 1px;
+// }
+
+.frame-text {
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #565656;
+  background-color: aliceblue;
+}
+
+.scale {
+  position: absolute;
+  bottom: 65px;
+  right: 114px;
+}
+.button_for_animation {
+  position: absolute;
+  bottom: 184px;
+  right: 131px;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  //   background-color: #5cb85c;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+// =============================
+
+input,
+output {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+output {
+  background: #ff4500;
+  padding: 5px 16px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+input[type='number'] {
+  width: 40px;
+  padding: 4px 5px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 1040px;
+  height: 2px;
+  background: #3d3c3c;
+  border-radius: 5px;
+  background-image: #222222;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  background-image: url(../images/frame-button.png);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  background-image: url(../images/frame-button.png);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']::-ms-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  background-image: url(../images/frame-button.png);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: #5d5b5b;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+  background: #5d5b5b;
+}
+
+input[type='range']::-ms-thumb:hover {
+  background: #5d5b5b;
+}
+
+/* Input Track */
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type='range']::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type='range']::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+// ====================
