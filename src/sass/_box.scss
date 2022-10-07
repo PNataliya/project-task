@@ -23,13 +23,16 @@
   right: 208px;
 }
 
-.frame {
-  position: absolute;
-  bottom: 72px;
-  left: 120px;
-  width: 1040px;
-  border: 2px solid tomato;
+#map {
+  width: 686px;
+  height: 457px;
 }
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
+}
+// .map-maket {
+//   background-color: #000000;
+// }
 
 .frame-scale {
   width: 1040px;
@@ -89,6 +92,8 @@ output {
 }
 
 input[type='number'] {
+  position: absolute;
+  bottom: 69px;
   width: 40px;
   padding: 4px 5px;
   border: 1px solid #bbb;
@@ -96,6 +101,8 @@ input[type='number'] {
 }
 
 input[type='range'] {
+  position: absolute;
+  bottom: 106px;
   -webkit-appearance: none;
   margin-right: 15px;
   width: 1040px;
@@ -174,4 +181,23 @@ input[type='range']::-ms-track {
   border: none;
   background: transparent;
 }
+// == стили для рендера таблицы ==
+// h1 {
+//   border-bottom: 3px solid #cc9900;
+//   color: #996600;
+//   font-size: 30px;
+// }
+// table,
+// th,
+// td {
+//   border: 1px solid grey;
+//   border-collapse: collapse;
+//   padding: 5px;
+// }
+// table tr:nth-child(odd) {
+//   background-color: #f1f1f1;
+// }
+// table tr:nth-child(even) {
+//   background-color: #ffffff;
+// }
 // ====================
